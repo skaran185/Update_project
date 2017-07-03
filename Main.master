@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="bootstrap/css/boot.css" rel="stylesheet" />
+    <script src="bootstrap/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        /*.container {
+            margin-top: 100px;
+        }
+
+        .well {
+            height: 130px;
+        }*/
+    </style>
+
+    
+</head>
+<body background="images/VzjitE.jpg">
+
+    <form runat="server">
+
+
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li ><%--<a class="navbar-brand" href="1.html">Home</a>--%></li>
+                    <li ><a href="StudentProfile.aspx">Profile</a>
+                    </li>
+                    <li><a href="Courses.aspx">Courses</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><asp:LinkButton runat="server" ID="signout" OnClick="signout_Click" CssClass="" Text="" > <i class="glyphicon glyphicon-user">Signout   </i></asp:LinkButton></li>
+                    
+                </ul>
+             
+                    <asp:Label runat="server" CssClass="navbar-form navbar-right" ID="Label5" ForeColor="white"></asp:Label>
+             
+            </div>
+        </div>
+    </nav>
+
+
+
+
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+       </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
+
+       
+        
